@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20180309114512) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id",    limit: 4
+    t.string   "name",       limit: 255
   end
 
   create_table "users", force: :cascade do |t|
